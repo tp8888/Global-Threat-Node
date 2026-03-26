@@ -12,14 +12,12 @@ While analyzing the honeynet telemetry, a secondary campaign of automated creden
 ### The Target: PostgreSQL (Port 5432)
 Analysis of the payload data revealed a highly targeted effort to breach PostgreSQL databases. 
 
-**[Insert your Kibana Tag Cloud Screenshot Here]**
-> *The tag cloud above highlights `postgres` as the overwhelmingly primary username targeted, accompanied by common default passwords (e.g., `123456`, `admin`, `password`).*
+![Postgres Tag Cloud](../images/heralding_tagcloud.png)> *The tag cloud above highlights `postgres` as the overwhelmingly primary username targeted, accompanied by common default passwords (e.g., `123456`, `admin`, `password`).*
 
 ### The Logs: Multi-Protocol Scanning
 By querying the `Heralding` index in the Discover tab, I was able to correlate the source IPs with the specific destination ports they were attacking.
 
-**[Insert your Kibana Discover Table Screenshot Here]**
-> *This table demonstrates the automated nature of the attacks. Threat actors are systematically scanning for default database ports (5432) and graphical remote desktop ports (5900) to gain deeper access to enterprise networks and exfiltrate sensitive data.*
+![Heralding Discover Table](../images/heralding_table.png)> *This table demonstrates the automated nature of the attacks. Threat actors are systematically scanning for default database ports (5432) and graphical remote desktop ports (5900) to gain deeper access to enterprise networks and exfiltrate sensitive data.*
 
 ## Threat Intelligence Takeaways
 This activity highlights the extreme risk of exposing databases directly to the public internet. The botnets captured in this brief are likely operating as Initial Access Brokers (IABs) or automated ransomware deployment scripts. 
