@@ -18,7 +18,7 @@ Designed and deployed a high-interaction **Honeynet** (T-Pot Framework) on a har
 ## 🗺️ I. Geographic Attack Mapping
 Within 24 hours of deployment, the node captured real-time scanning and brute-force attempts from multiple international geographic regions, highlighting the extreme speed at which cloud assets are mapped by threat actors.
 
-![Global Attack Map](images/image_b4811c.png)
+![Global Attack Map](images/attack_map.png)
 > *Dashboard visualization (Kibana) of inbound attack vectors, categorizing traffic by destination port and geographic origin.*
 
 ---
@@ -27,11 +27,11 @@ Within 24 hours of deployment, the node captured real-time scanning and brute-fo
 Utilizing the **Cowrie** high-interaction SSH/Telnet honeypot, the system captured thousands of automated dictionary attacks. 
 
 ### Credential Tag Clouds
-![Username and Password Tagcloud](images/image_c1b79e.png)
+![Username and Password Tagcloud](images/credential_tagclouds.png)
 > *Visual representation of the most frequently attempted username and password combinations. Note the high frequency of default credentials (`root`, `admin`) alongside targeted crypto-node names (`sol`, `solana`).*
 
 ### Targeted Infrastructure Sweeps
-![Targeted Brute Force](images/image_3f99a5.png)
+![Targeted Brute Force](images/targeted_bruteforce.png)
 > *Log analysis revealed targeted sweeps looking for specific infrastructure, such as Solana cryptocurrency validators (`sol`, `validator`), demonstrating that modern botnets are financially motivated and highly specific.*
 
 ---
@@ -39,7 +39,7 @@ Utilizing the **Cowrie** high-interaction SSH/Telnet honeypot, the system captur
 ## 🦠 III. Post-Exploitation Forensics: Mirai Botnet Capture
 Following a successful brute-force attack (`root/root`) by a South Korean IP address, the system captured the immediate post-exploitation keystrokes executed by the automated threat actor.
 
-![Keystroke Logging](images/image_4101e2.png)
+![Keystroke Logging](images/keystroke_logs.png)
 
 ### The Cyber Kill Chain in Action:
 1. **System Reconnaissance & Evasion:** The bot executed `/bin/./uname -s -v -n -r -m` using path obfuscation to bypass basic logging while fingerprinting the OS architecture.
@@ -47,7 +47,7 @@ Following a successful brute-force attack (`root/root`) by a South Korean IP add
 3. **Redundancy:** Anticipating that `wget` might be uninstalled by security engineers, the bot immediately attempted a fallback connection using `nc` (Netcat) over TCP/3345.
 
 ### OSINT Attribution
-![VirusTotal OSINT](images/image_4172e5.png)
+![VirusTotal OSINT](images/virustotal_mirai.png)
 > *Cross-referencing the extracted payload IP (`196.251.107.133`) using VirusTotal confirmed the infrastructure belongs to the **Mirai botnet**, corroborating the architecture-scanning behavior captured in the logs.*
 
 ---
@@ -63,7 +63,7 @@ This deployment required significant manual engineering and hardening to transit
 ### Zero-Trust Management Plane
 Initial log analysis showed 4,736 unauthorized hits to the management port (64297). To mitigate the risk of an administrative compromise, I implemented a strict **Source-IP Whitelist** via Azure NSGs.
 
-![Azure NSG Whitelist](images/image_c29fe1.png)
+![Azure NSG Whitelist](images/azure_nsg_whitelist.png)
 > *By restricting Ports 64294, 64295, and 64297 exclusively to `[YOUR_HOME_IP]`, the administrative attack surface was reduced to zero while keeping the honeypot sensor ports open to the public internet.*
 
 ---
