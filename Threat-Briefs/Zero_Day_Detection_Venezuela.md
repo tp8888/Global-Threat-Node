@@ -37,6 +37,15 @@ Cisco Talos showed a **"Neutral" reputation** and confirmed the owner as CANTV S
 ## 4. SOC Analyst Takeaways
 This investigation is a textbook example of a "True Positive" detection where internal behavior outweighs external reputation.
 
+## 5. Statistical Evidence: Dionaea Dashboard Analysis
+Deep-dive analysis of the Dionaea sensor telemetry reveals the true scale of this campaign:
+
+* **Top ASN:** AS8048 (CANTV Servicios, Venezuela) accounts for the highest volume of malicious traffic, with over 6,300 unique attack events captured.
+* **Primary Target:** Port 445 (SMB) remains the exclusive target of this specific botnet, indicating a focus on unpatched Windows network shares.
+* **Sustained Volume:** The IP `190.206.115.73` maintained a top-tier attack volume of over 3,100 events, highlighting the persistence of the automated script.
+
+![Dionaea Attacker Stats](../images/dionaea_attacker_stats.png)
+
 * **Behavior over Reputation:** Even though the world's most trusted intelligence sources (VT and Talos) called this IP "Neutral," my **Dionaea** honeypot proved its behavior was explicitly malicious.
 * **Proactive Defense (Zero-Day):** By identifying this threat before it was blacklisted, I gained "Zero-Day" intelligence. In a real-world SOC environment, this internal data would be used to create an immediate "pre-emptive" block rule on the edge firewall, stopping the attack *before* a broad intelligence update occurred.
 * **Compromised Residential Infrastructure:** The assignment to CANTV Servicios heavily suggests this is a compromised residential router or government-owned PC that has been recently recruited into a wide-scale SMB botnet.
