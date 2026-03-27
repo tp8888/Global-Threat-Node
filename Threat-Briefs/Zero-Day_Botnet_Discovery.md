@@ -20,7 +20,7 @@ To move from an aggregated visual to raw forensic data, I transitioned to the Ki
 
 Instead of analyzing 11,000 individual events, I aggregated the data by the `src_ip` field to determine if this was a distributed attack (many IPs) or a concentrated attack (few IPs). 
 
-**[Insert your Kibana Top IP Screenshot Here]**
+![Kibana Top IPs](../images/kibana_top_ips.png)
 > *SIEM Telemetry: The log aggregation revealed a highly concentrated attack. Just two IP addresses were responsible for over 90% of the entire 11,000+ attack volume, executing a highly aggressive, automated enumeration script.*
 
 ## Phase 3: OSINT Research & Attribution (The Deep Dive)
@@ -36,7 +36,7 @@ With the source IPs isolated, I pivoted to external Open-Source Intelligence (OS
 * **ASN:** AS 17451 (BIZNET NETWORKS)
 * **VT Score:** 0/94 Vendors Flagged
 
-**[Insert your VirusTotal 0/94 Screenshot Here]**
+![VirusTotal Zero Day](../images/virustotal_zeroday.png)
 > *OSINT Evidence: Both IP addresses returned completely clean scores (0/94) across 94 global security vendors at the exact moment they were actively hammering the honeynet with thousands of malicious SMB requests.*
 
 ## Phase 4: Threat Profiling & Analyst Conclusion
