@@ -1,7 +1,9 @@
 # 🚨 Threat Brief: Database & Remote Desktop Credential Harvesting
 
 **Date:** March 2026
+
 **Sensor:** Heralding (Credential Catching Honeypot)
+
 **Targeted Services:** PostgreSQL (TCP/5432), VNC (TCP/5900)
 
 ## Overview
