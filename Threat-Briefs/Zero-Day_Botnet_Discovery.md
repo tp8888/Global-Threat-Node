@@ -20,7 +20,7 @@ To move from an aggregated visual to raw forensic data, I transitioned to the Ki
 
 Instead of analyzing 11,000 individual events, I aggregated the data by the `src_ip` field to determine if this was a distributed attack (many IPs) or a concentrated attack (few IPs). 
 
-![Kibana Top IPs](../images/virustotal_zeroday.png)
+![Kibana Top IPs](../images/kibana_top_ips.png)
 > *SIEM Telemetry: The log aggregation revealed a highly concentrated attack. Just two IP addresses were responsible for over 90% of the entire 11,000+ attack volume, executing a highly aggressive, automated enumeration script.*
 
 ## Phase 3: OSINT Research & Attribution (The Deep Dive)
