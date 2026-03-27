@@ -129,3 +129,9 @@ As new campaigns and threat actors are identified within the honeynet, detailed 
   
 
 * [🕵️‍♂️ Case Study: Zero-Day Botnet Discovery](Threat-Briefs/Zero-Day_Botnet_Discovery.md)
+  
+
+*  [🗄️ Threat Hunt: Database Credential Harvesting & `sa` Targeting](Threat-Briefs/Database_Credential_Harvesting.md)
+  
+  
+* [🔄 Threat Hunt: Application-Layer Protocol Confusion](Threat-Briefs/API_Protocol_Confusion.md)
