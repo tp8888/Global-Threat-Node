@@ -126,3 +126,6 @@ As new campaigns and threat actors are identified within the honeynet, detailed 
 
 
 * [🚨 Threat Brief: Unauthenticated File Shares & Malware Droppers (Dionaea)](Threat-Briefs/Dionaea_Malware_Traps.md)
+  
+
+* [🕵️‍♂️ Case Study: Zero-Day Botnet Discovery](Threat-Briefs/Zero-Day_Botnet_Discovery.md)
