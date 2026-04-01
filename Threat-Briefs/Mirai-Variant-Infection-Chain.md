@@ -16,7 +16,7 @@ This brief documents the tactical breakdown of the attack lifecycle, associated 
 
 Upon successfully authenticating, the attacker did not immediately drop a payload. Instead, they executed a series of manual "Living off the Land" (LotL) commands to evaluate the system's hardware capabilities and eliminate competing botnet infections.
 
-![Reconnaissance and Clearing Commands](./images/recon_commands.png) 
+![Reconnaissance and Clearing Commands](../images/recon_commands.png) 
 *(Note: Upload the image showing the `lscpu`, `free -m`, and `pkill` commands here)*
 
 ### Tactical Breakdown:
@@ -30,7 +30,7 @@ Upon successfully authenticating, the attacker did not immediately drop a payloa
 
 To secure their foothold against both the legitimate system administrator and automated remediation tools, the attacker systematically altered authentication mechanisms.
 
-![Establishing SSH Persistence](./images/ssh_persistence.png)
+![Establishing SSH Persistence](../images/ssh_persistence.png)
 *(Note: Upload the image showing the `chattr` and `authorized_keys` injection commands here)*
 
 ### Tactical Breakdown:
@@ -49,7 +49,7 @@ To secure their foothold against both the legitimate system administrator and au
 
 With the environment secured and evaluated, the attacker initiated an automated script to pull down the primary malware payload from a remote Command and Control (C2) infrastructure.
 
-![Malware Payload Delivery Sequence](./images/payload_download.png)
+![Malware Payload Delivery Sequence](../images/payload_download.png)
 *(Note: Upload the image showing the `wget` and `sin.sh` download attempts here)*
 
 ### Tactical Breakdown:
@@ -66,7 +66,7 @@ With the environment secured and evaluated, the attacker initiated an automated 
 
 By correlating the honeypot file download logs with the captured interactive commands, the `sin.sh` payload was isolated. The file was extracted from the Cowrie downloads directory for hash generation and external threat intelligence analysis.
 
-![VirusTotal Analysis of sin.sh](./images/virustotal_analysis.png)
+![VirusTotal Analysis of sin.sh](../images/virustotal_analysis.png)
 *(Note: Upload the screenshot of the VirusTotal detection page here)*
 
 ### Indicators of Compromise (IoCs)
