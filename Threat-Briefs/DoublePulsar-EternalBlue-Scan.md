@@ -16,7 +16,7 @@ This brief documents the network telemetry of these mass-scanning events and out
 
 The attackers utilized automated scanning scripts to identify public-facing infrastructure with Port 445 open to the internet. 
 
-![Suricata DoublePulsar Logs](./images/doublepulsar_suricata_logs.png)
+![Suricata DoublePulsar Logs](../images/doublepulsar_suricata_logs.png)
 *(Note: Upload your Suricata `DestPort: 445` screenshot here)*
 
 ### Analysis of the Network Traffic:
@@ -42,7 +42,7 @@ To understand the origin of these mass scanning events, the highest-volume offen
 
 A query against AbuseIPDB yielded the following intelligence regarding the primary scanning node:
 
-![AbuseIPDB Threat Intelligence for 83.239.79.234](./images/abuseipdb_83_239_79_234.png)
+![AbuseIPDB Threat Intelligence for 83.239.79.234](../images/abuseipdb_83_239_79_234.png)
 *(Note: Upload the AbuseIPDB screenshot here)*
 
 * **Abuse Confidence Score:** 81% (Reported 43 times within the last 60 days)
