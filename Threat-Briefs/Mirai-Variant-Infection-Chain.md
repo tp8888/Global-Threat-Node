@@ -50,6 +50,7 @@ To secure their foothold against both the legitimate system administrator and au
 With the environment secured and evaluated, the attacker initiated an automated script to pull down the primary malware payload from a remote Command and Control (C2) infrastructure.
 
 ![Malware Payload Delivery Sequence](../images/payload_download.png)
+
 *(Image showing the `wget` and `sin.sh` download attempts)*
 
 ### Tactical Breakdown:
@@ -67,7 +68,7 @@ With the environment secured and evaluated, the attacker initiated an automated 
 By correlating the honeypot file download logs with the captured interactive commands, the `sin.sh` payload was isolated. The file was extracted from the Cowrie downloads directory for hash generation and external threat intelligence analysis.
 
 ![VirusTotal Analysis of sin.sh](../images/virustotal_analysis.png)
-*(VirusTotal analysis)*
+*(Image showing the VirusTotal analysis)*
 
 ### Indicators of Compromise (IoCs)
 
