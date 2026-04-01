@@ -1,6 +1,7 @@
 # 🕵️‍♂️ Case Study: Zero-Day Botnet Discovery
 
 * **Date:** March 2026
+* **Analyst:** Thomas Price  
 * **Primary Sensor:** Dionaea 
 * **Targeted Protocol:** SMB (TCP Port 445)
 * **Threat Classification:** Undetected IoT/Residential Botnet
