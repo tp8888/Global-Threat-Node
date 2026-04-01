@@ -1,6 +1,7 @@
 # 🚨 Live Incident Report: Zero-Day Detection (Venezuela)
 
 * **Date:** March 27, 2026
+* **Analyst:** Thomas Price  
 * **Attacker IP:** `190.206.115.73`
 * **Source:** Puerto Ayacucho, Venezuela (CANTV Servicios, state-run/residential ISP)
 * **Vector:** Port 445 (SMB) / High-Velocity Automated Scanning Script
