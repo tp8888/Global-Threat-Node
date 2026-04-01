@@ -43,7 +43,8 @@ To understand the origin of these mass scanning events, the highest-volume offen
 A query against AbuseIPDB yielded the following intelligence regarding the primary scanning node:
 
 ![AbuseIPDB Threat Intelligence for 83.239.79.234](../images/abuseipdb_83_239_79_234.png)
-AbuseIPDB
+
+AbuseIPDB This IP was reported 43 times. Confidence of Abuse is 81%:
 
 * **Abuse Confidence Score:** 81% (Reported 43 times within the last 60 days)
 * **ISP / Organization:** PJSC Rostelecom Macroregional Branch South (AS25490)
