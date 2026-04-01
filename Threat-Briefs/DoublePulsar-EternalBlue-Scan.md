@@ -2,6 +2,7 @@
 
 **Date:** April 2026  
 **Analyst:** Thomas Price
+
 **Targeted Service:** SMB (Port 445)  
 **Honeypot Sensor:** T-Pot (Suricata)  
 
