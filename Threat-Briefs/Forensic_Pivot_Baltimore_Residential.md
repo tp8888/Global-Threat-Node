@@ -1,6 +1,7 @@
 # 🕵️‍♂️ Forensic Deep-Dive: Investigating a Residential Attack Cluster
 
 * **Date:** March 2026
+* **Analyst:** Thomas Price  
 * **Location:** Baltimore, MD, USA
 * **Primary IP Investigated:** `73.135.69.230`
 * **Tools Used:** Kibana Maps, Cisco Talos Intelligence, Whois
