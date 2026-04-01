@@ -143,4 +143,4 @@ As new campaigns and threat actors are identified within the honeynet, detailed 
 
 * [🚨 Live Incident Report: Zero-Day Detection (Venezuela)](Threat-Briefs/Zero_Day_Detection_Venezuela.md) 
 
-* [Threat Brief: DoublePulsar & EternalBlue Mass Scanning](./Threat-Briefs/DoublePulsar-EternalBlue-Scan.md)
+* [🍯 Threat Brief: DoublePulsar & EternalBlue Mass Scanning](./Threat-Briefs/DoublePulsar-EternalBlue-Scan.md)
