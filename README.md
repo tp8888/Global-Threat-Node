@@ -146,3 +146,6 @@ As new campaigns and threat actors are identified within the honeynet, detailed 
  * [🍯 Threat Brief: Mirai Variant Infection Chain Analysis](./Threat-Briefs/Mirai-Variant-Infection-Chain.md)
 
 * [🍯 Threat Brief: DoublePulsar & EternalBlue Mass Scanning](./Threat-Briefs/DoublePulsar-EternalBlue-Scan.md)
+
+
+* [🕵️‍♂️ Incident Investigation: Post-Exploitation Analysis (IP: 5.182.83.231)](./Threat-Briefs/Incident-Investigation-Post-Exploitation-5-182-83-231.md)
